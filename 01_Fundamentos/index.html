@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Celsius to Fahrenheit</title>
+  <title>01 - Fundamentos</title>
 </head>
+
 <body>
+
+  <!-- IMC Begin -->
+  <form>
+    <h2>Cálculo IMC</h2>
+    <input type="number" id="peso" placeholder="Digite seu peso em KG">
+    <input type="number" id="altura" placeholder="Digite a altura em metros">
+
+    <input type="submit" value="Calcular" id="imc-btn">
+  </form>
+  <p>Seu IMC é: <span id="imc"></span></p>
+  <!-- IMC End -->
+
+  <!-- Area and perimeter Begin -->
+  <form>
+    <h2>Area e Perímetro</h1>
+      <input type="number" id="comprimento" placeholder="Digite o comprimento">
+      <input type="number" id="largura" placeholder="Digite a largura">
+
+      <input type="submit" value="Calcular" id="ap-btn">
+  </form>
+  <p>Área: <span id="area"></span></p>
+  <p>Perímetro: <span id="perimetro"></span></p>
+  <!-- Area and perimeter End -->
+
   <script src="index.js"></script>
 </body>
+
 </html>
