@@ -248,6 +248,9 @@ for(let i = 1; i <= maxNumber; i++){
 // fibonacci
 
 const targetNumber = 12
-const fibonacci = []
+const fibonacci = [0,1]
 
-
+for(let i = 2; fibonacci[i] >= targetNumber; i++){
+  fibonacci[i] = (fibonacci[(i-1)] + fibonacci[i-2])
+  console.log(fibonacci)
+}
