@@ -105,9 +105,91 @@ function contaVogais(texto){
 
 }
 
-console.log(contaVogais("sdfgh"))
+// console.log(contaVogais("sdfgh"))
 // console.log(contaVogais("sdsafiouhfoauishofuasioufio"))
 // console.log(contaVogais("hwqueogqwiucdxiuqbidqiu"))
 // console.log(contaVogais("qiuoiayouc ouaocaocsaucasiouhcauhcoashoi"))
 
 // Palindromo
+
+function palindromo(texto){
+  let textoInvertido = texto.split('').reverse().join('')
+
+  if(texto === textoInvertido){
+    return `Este texto representa um palíndromo`
+  }
+  else{
+    return `Este texto não retorna um palíndromo`
+  }
+}
+
+// console.log(palindromo("roma é amor"))
+// console.log(palindromo("Nikolas menezes"))
+// console.log(palindromo("ana radar"))
+
+
+// Array de números aleatórios
+
+function arrayAleatorio(tamanho, max){
+
+  let arrayAleatorio = []
+
+  for(let i = 0; i < tamanho; i++){
+    arrayAleatorio.push(Math.floor(Math.random() * max))
+  }
+
+  return arrayAleatorio
+}
+
+// console.log(arrayAleatorio(10,30))
+
+function verificaElementoFrequente(lista){
+
+  let guardaValores = {}
+  let count = 0
+
+  for(let i = 0; i < lista.length; i++){
+    count = 0
+
+    for(let j = 0; j < lista.length; j++){
+      if(lista[j] == lista[i]){
+        count++
+      }
+      if (!(lista[i] in guardaValores)) {
+        guardaValores[i] = 0
+      }
+      
+    }
+    guardaValores[i] = count
+
+  }
+  // return `O elemento mais frequente nessa lista é ${elementoMaisFrequente} `
+  return guardaValores
+}
+
+const lista = [1,2,3,3,3,3,4,4,4,4,4,3,2,1,3,2]
+
+// console.log(verificaElementoFrequente(lista))
+
+const maisFrequente = (arr) => {
+  obj = {}
+  arr.forEach((item) => {
+      if(!(item in obj)) {
+          obj[item] = 0
+      }
+
+      obj[item] += 1
+  })
+
+  maiorElemento = 0
+  maiorNumero = 0
+  Object.entries(obj).map(([key, value]) => {
+      if(value > maiorNumero) {
+          maiorNumero = value
+          maiorElemento = key
+      }
+  })
+
+  return maiorElemento
+}
+console.log(maisFrequente(lista))
