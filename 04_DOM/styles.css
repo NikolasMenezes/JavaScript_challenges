@@ -1,6 +1,6 @@
 *{
   padding: 0;
-  margin: 0;
+  margin: 10px; 
 }
 
 .div-estilizada{
@@ -12,4 +12,16 @@
 
 .div-estilizada.ativo{
   background-color: green;
+}
+
+.button-list{
+  margin: 2rem 0;
+}
+
+.list-remove li{
+  cursor: default;
+}
+
+.hide{
+  display: none;
 }
