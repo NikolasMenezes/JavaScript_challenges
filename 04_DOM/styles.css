@@ -1,0 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.div-estilizada{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 2rem 0;
+}
+
+.div-estilizada.ativo{
+  background-color: green;
+}

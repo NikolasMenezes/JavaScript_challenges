@@ -83,6 +83,23 @@ const filtra = (obj, arr) =>{
 
 }
 
-console.log(filtra(user, requisicao))
+// console.log(filtra(user, requisicao))
 
 // concatenação de objetos
+
+const concatenaObj = (obj1, obj2) => {
+
+  const newObj = Object.assign({}, obj1, obj2)
+
+  return newObj
+}
+
+console.log(concatenaObj(user, obj))
+
+// resolução do instrutor
+
+const unirObjetos = (obj1, obj2) =>{
+  return {...obj1, ...obj2}
+}
+
+console.log(unirObjetos(user, obj))
