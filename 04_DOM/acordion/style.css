@@ -1,0 +1,13 @@
+#acordion-container{
+    width: 300px;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
